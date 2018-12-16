@@ -1,0 +1,13 @@
+<!--
+  [routerLink] is the predefined directive
+  [routerLink] is used to load the page without refreshing
+
+  <router-outlet> is the predefined directive
+  <router-outlet> behaves like magnet to hold the target pages
+-->
+<a [routerLink]="['/']"><b>Page_One</b></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<a [routerLink]="['/page_two']"><b>Page_Two</b></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<!-- <a href="/page_two"><b>Page_Two</b></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; -->
+<button (click)="clickMe()"><b>Page_Three</b></button>
+<br><br>
+<router-outlet></router-outlet>
